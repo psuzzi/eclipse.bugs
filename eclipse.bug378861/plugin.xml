@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="eclipse.bug378861"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://eclipse.bug378861/eclipse.bug378861.E4LifeCycle">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/eclipse.bug378861/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="eclipse.bug378861">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
