@@ -146,7 +146,10 @@ public class SamplePart {
 		//
 		for (MMenuElement menuChild : popupMenu.getChildren()) {
 			if (id.equals(menuChild.getElementId())) {
-				popupMenu.getChildren().remove(menuChild);
+				int ci = popupMenu.getChildren().indexOf(menuChild);
+				// menuChild.setVisible(false);
+				// menuChild.setToBeRendered(false);
+				popupMenu.getChildren().remove(ci);
 				print("found: " + menuChild);
 				break;
 			}
