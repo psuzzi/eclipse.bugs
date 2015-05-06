@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_I-s4QPNiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.ide.application" bindingContexts="_I-s4SfNiEeSIHfL1pXPTZw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_I-s4QfNiEeSIHfL1pXPTZw" label="e4.test.app" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_I-s4YPNiEeSIHfL1pXPTZw">
+      <children xsi:type="advanced:Perspective" xmi:id="_I-s4YfNiEeSIHfL1pXPTZw" elementId="e4.test.app.perspective.1" label="One">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_I-s4YvNiEeSIHfL1pXPTZw">
+          <children xsi:type="basic:PartStack" xmi:id="_I-tfUPNiEeSIHfL1pXPTZw">
+            <children xsi:type="basic:Part" xmi:id="_I-tfUfNiEeSIHfL1pXPTZw" contributionURI="bundleclass://e4.test.app/e4.test.app.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_QxJzAPOFEeSwVoUAWpuYDA" elementId="e4.test.app.perspective.2" label="Two">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_a43p4POFEeSwVoUAWpuYDA" elementId="e4.test.app.partsashcontainer.0">
+          <children xsi:type="basic:PartStack" xmi:id="_bgttAPOFEeSwVoUAWpuYDA" elementId="e4.test.app.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_cCoHQPOFEeSwVoUAWpuYDA" elementId="e4.test.app.part.twoOne" contributionURI="bundleclass://e4.test.app/e4.test.app.parts.TwoOnePart" label="Two One"/>
+            <children xsi:type="basic:Part" xmi:id="_cYMHkPOFEeSwVoUAWpuYDA" elementId="e4.test.app.part.twoTwo" contributionURI="bundleclass://e4.test.app/e4.test.app.parts.TwoTwoPart" label="Two Two"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_I-s4WfNiEeSIHfL1pXPTZw" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_I-s4WvNiEeSIHfL1pXPTZw" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_I-s4W_NiEeSIHfL1pXPTZw" label="Open" iconURI="platform:/plugin/e4.test.app/icons/sample.png" command="_I-s4UPNiEeSIHfL1pXPTZw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_I-s4XPNiEeSIHfL1pXPTZw" label="Save" iconURI="platform:/plugin/e4.test.app/icons/save_edit.png" command="_I-s4U_NiEeSIHfL1pXPTZw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_I-s4XfNiEeSIHfL1pXPTZw" label="Quit" command="_I-s4TPNiEeSIHfL1pXPTZw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_I-s4XvNiEeSIHfL1pXPTZw" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_I-s4X_NiEeSIHfL1pXPTZw" label="About" command="_I-s4VvNiEeSIHfL1pXPTZw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_I-tfUvNiEeSIHfL1pXPTZw">
+      <children xsi:type="menu:ToolBar" xmi:id="_I-tfU_NiEeSIHfL1pXPTZw" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_I-tfVPNiEeSIHfL1pXPTZw" iconURI="platform:/plugin/e4.test.app/icons/sample.png" command="_I-s4UPNiEeSIHfL1pXPTZw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_I-tfVfNiEeSIHfL1pXPTZw" iconURI="platform:/plugin/e4.test.app/icons/save_edit.png" command="_I-s4U_NiEeSIHfL1pXPTZw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_GU6g0POJEeSiZcQUlLS8hg" elementId="e4.test.app.handledtoolitem.switchPerspectiveOne" label="Switch Perspective One" command="_8oOZEPOIEeSiZcQUlLS8hg">
+          <parameters xmi:id="_M6l0UPOJEeSiZcQUlLS8hg" elementId="e4.test.app.parameter.0" name="e4.test.app.command.param.perspectiveid" value="e4.test.app.perspective.1"/>
+        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JohmoPOJEeSiZcQUlLS8hg" elementId="e4.test.app.handledtoolitem.switchPerspectiveTwo" label="Switch Perspective Two" command="_8oOZEPOIEeSiZcQUlLS8hg">
+          <parameters xmi:id="_Q8tl8POJEeSiZcQUlLS8hg" elementId="e4.test.app.parameter.1" name="e4.test.app.command.param.perspectiveid" value="e4.test.app.perspective.2"/>
+        </children>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_I-s4TfNiEeSIHfL1pXPTZw" elementId="e4.test.app.handler.quitCommand" contributionURI="bundleclass://e4.test.app/e4.test.app.handlers.QuitHandler" command="_I-s4TPNiEeSIHfL1pXPTZw"/>
+  <handlers xmi:id="_I-s4UfNiEeSIHfL1pXPTZw" elementId="e4.test.app.handler.openCommand" contributionURI="bundleclass://e4.test.app/e4.test.app.handlers.OpenHandler" command="_I-s4UPNiEeSIHfL1pXPTZw"/>
+  <handlers xmi:id="_I-s4VPNiEeSIHfL1pXPTZw" elementId="e4.test.app.handler.saveCommand" contributionURI="bundleclass://e4.test.app/e4.test.app.handlers.SaveHandler" command="_I-s4U_NiEeSIHfL1pXPTZw"/>
+  <handlers xmi:id="_I-s4V_NiEeSIHfL1pXPTZw" elementId="e4.test.app.handler.aboutCommand" contributionURI="bundleclass://e4.test.app/e4.test.app.handlers.AboutHandler" command="_I-s4VvNiEeSIHfL1pXPTZw"/>
+  <handlers xmi:id="_UCo1EPOJEeSiZcQUlLS8hg" elementId="e4.test.app.handler.0" contributionURI="bundleclass://e4.test.app/e4.test.app.handlers.SwitchPerspectiveHandler" command="_8oOZEPOIEeSiZcQUlLS8hg"/>
+  <bindingTables xmi:id="_I-s4TvNiEeSIHfL1pXPTZw" bindingContext="_I-s4SfNiEeSIHfL1pXPTZw">
+    <bindings xmi:id="_I-s4T_NiEeSIHfL1pXPTZw" keySequence="M1+Q" command="_I-s4TPNiEeSIHfL1pXPTZw"/>
+    <bindings xmi:id="_I-s4UvNiEeSIHfL1pXPTZw" keySequence="M1+O" command="_I-s4UPNiEeSIHfL1pXPTZw"/>
+    <bindings xmi:id="_I-s4VfNiEeSIHfL1pXPTZw" keySequence="M1+S" command="_I-s4U_NiEeSIHfL1pXPTZw"/>
+    <bindings xmi:id="_I-s4WPNiEeSIHfL1pXPTZw" keySequence="M1+A" command="_I-s4VvNiEeSIHfL1pXPTZw"/>
+  </bindingTables>
+  <rootContext xmi:id="_I-s4SfNiEeSIHfL1pXPTZw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_I-s4SvNiEeSIHfL1pXPTZw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_I-s4S_NiEeSIHfL1pXPTZw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_I-s4TPNiEeSIHfL1pXPTZw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_I-s4UPNiEeSIHfL1pXPTZw" elementId="e4.test.app.open" commandName="openCommand"/>
+  <commands xmi:id="_I-s4U_NiEeSIHfL1pXPTZw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_I-s4VvNiEeSIHfL1pXPTZw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_8oOZEPOIEeSiZcQUlLS8hg" elementId="e4.test.app.command.switchPerspective" commandName="Switch Perspective">
+    <parameters xmi:id="_-DRawPOIEeSiZcQUlLS8hg" elementId="e4.test.app.command.param.perspectiveid" name="Perspective ID"/>
+  </commands>
+  <addons xmi:id="_I-s4QvNiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_I-s4Q_NiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_I-s4RPNiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_I-s4RfNiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_I-s4RvNiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_I-s4R_NiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_I-s4SPNiEeSIHfL1pXPTZw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

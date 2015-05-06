@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_PyExIPLAEeScQvq1LWJmZA" elementId="org.eclipse.e4.ide.application" bindingContexts="_PyExKfLAEeScQvq1LWJmZA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_PyExIfLAEeScQvq1LWJmZA" label="test.bug.421066" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_PyExQPLAEeScQvq1LWJmZA">
+      <children xsi:type="advanced:Perspective" xmi:id="_PyExQfLAEeScQvq1LWJmZA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_PyExQvLAEeScQvq1LWJmZA">
+          <children xsi:type="basic:PartStack" xmi:id="_PyExQ_LAEeScQvq1LWJmZA">
+            <children xsi:type="basic:Part" xmi:id="_PyExRPLAEeScQvq1LWJmZA" contributionURI="bundleclass://test.bug.421066/test.bug.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_PyExOfLAEeScQvq1LWJmZA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_PyExOvLAEeScQvq1LWJmZA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_PyExO_LAEeScQvq1LWJmZA" label="Open" iconURI="platform:/plugin/test.bug.421066/icons/sample.png" command="_PyExMPLAEeScQvq1LWJmZA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_PyExPPLAEeScQvq1LWJmZA" label="Save" iconURI="platform:/plugin/test.bug.421066/icons/save_edit.png" command="_PyExM_LAEeScQvq1LWJmZA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_PyExPfLAEeScQvq1LWJmZA" label="Quit" command="_PyExLPLAEeScQvq1LWJmZA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_PyExPvLAEeScQvq1LWJmZA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_PyExP_LAEeScQvq1LWJmZA" label="About" command="_PyExNvLAEeScQvq1LWJmZA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_PyExRfLAEeScQvq1LWJmZA">
+      <children xsi:type="menu:ToolBar" xmi:id="_PyExRvLAEeScQvq1LWJmZA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_PyExR_LAEeScQvq1LWJmZA" iconURI="platform:/plugin/test.bug.421066/icons/sample.png" command="_PyExMPLAEeScQvq1LWJmZA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_PyExSPLAEeScQvq1LWJmZA" iconURI="platform:/plugin/test.bug.421066/icons/save_edit.png" command="_PyExM_LAEeScQvq1LWJmZA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_PyExLfLAEeScQvq1LWJmZA" elementId="test.bug.421066.handler.quitCommand" contributionURI="bundleclass://test.bug.421066/test.bug.handlers.QuitHandler" command="_PyExLPLAEeScQvq1LWJmZA"/>
+  <handlers xmi:id="_PyExMfLAEeScQvq1LWJmZA" elementId="test.bug.421066.handler.openCommand" contributionURI="bundleclass://test.bug.421066/test.bug.handlers.OpenHandler" command="_PyExMPLAEeScQvq1LWJmZA"/>
+  <handlers xmi:id="_PyExNPLAEeScQvq1LWJmZA" elementId="test.bug.421066.handler.saveCommand" contributionURI="bundleclass://test.bug.421066/test.bug.handlers.SaveHandler" command="_PyExM_LAEeScQvq1LWJmZA"/>
+  <handlers xmi:id="_PyExN_LAEeScQvq1LWJmZA" elementId="test.bug.421066.handler.aboutCommand" contributionURI="bundleclass://test.bug.421066/test.bug.handlers.AboutHandler" command="_PyExNvLAEeScQvq1LWJmZA"/>
+  <bindingTables xmi:id="_PyExLvLAEeScQvq1LWJmZA" bindingContext="_PyExKfLAEeScQvq1LWJmZA">
+    <bindings xmi:id="_PyExL_LAEeScQvq1LWJmZA" keySequence="M1+Q" command="_PyExLPLAEeScQvq1LWJmZA"/>
+    <bindings xmi:id="_PyExMvLAEeScQvq1LWJmZA" keySequence="M1+O" command="_PyExMPLAEeScQvq1LWJmZA"/>
+    <bindings xmi:id="_PyExNfLAEeScQvq1LWJmZA" keySequence="M1+S" command="_PyExM_LAEeScQvq1LWJmZA"/>
+    <bindings xmi:id="_PyExOPLAEeScQvq1LWJmZA" keySequence="M1+A" command="_PyExNvLAEeScQvq1LWJmZA"/>
+  </bindingTables>
+  <rootContext xmi:id="_PyExKfLAEeScQvq1LWJmZA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_PyExKvLAEeScQvq1LWJmZA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_PyExK_LAEeScQvq1LWJmZA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_PyExLPLAEeScQvq1LWJmZA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_PyExMPLAEeScQvq1LWJmZA" elementId="test.bug.421066.open" commandName="openCommand"/>
+  <commands xmi:id="_PyExM_LAEeScQvq1LWJmZA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_PyExNvLAEeScQvq1LWJmZA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_PyExIvLAEeScQvq1LWJmZA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_PyExI_LAEeScQvq1LWJmZA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_PyExJPLAEeScQvq1LWJmZA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_PyExJfLAEeScQvq1LWJmZA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_PyExJvLAEeScQvq1LWJmZA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_PyExJ_LAEeScQvq1LWJmZA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_PyExKPLAEeScQvq1LWJmZA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
